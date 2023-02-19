@@ -1,0 +1,3 @@
+Volumetric Shading - Makes the game look a lot nicer but settings need to be tweaked with ctrl + c (sun dark w/o d light) https://mods.vintagestory.at/show/mod/24
+Fancy Sky - Makes the sun and moon circular and looks nice but preference based https://mods.vintagestory.at/fancysky
+Lay of the Land - Better depth on map render https://mods.vintagestory.at/show/mod/4543

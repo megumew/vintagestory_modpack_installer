@@ -1,0 +1,42 @@
+Bullseye - greatly improves archery https://mods.vintagestory.at/bullseye
+Player Corpse - death waypoint and item storage https://mods.vintagestory.at/playercorpse
+Ancient Tools - Adds useful simplistic tools that will be useful early on https://mods.vintagestory.at/ancienttools
+ACulinaryArtillery - Adds nice cooking items https://mods.vintagestory.at/aculinaryartillery
+Expanded Foods - Adds more foods with the cooking items https://mods.vintagestory.at/expandedfoods
+anMiTech - Adds a nice variety of armor looks https://mods.vintagestory.at/show/mod/1550
+Blacksmith Name - Adds the smiths name to smithed items but it shows up 2x which seems to be a bug. Still seems worth. https://mods.vintagestory.at/show/mod/1910
+Instruments - Adds instruments that play ABC files like starbound and can play with "band" https://mods.vintagestory.at/show/mod/463
+Place Every Item - Lets you place most items on the ground which feels kind of essential for this game early https://mods.vintagestory.at/pei
+Brick Layers - Adds a lot more late game options to clay and bricks https://mods.vintagestory.at/bricklayers
+Expanded Matter - Required for Brick Layers https://mods.vintagestory.at/em
+CarryOn - Lets you move some items without having to break them first https://mods.vintagestory.at/carryon
+PetAi - Adds friendly pet AI to the game https://mods.vintagestory.at/petai
+Wolf Taming - Lets you tame wolf pups into dogs https://mods.vintagestory.at/wolftaming
+Fox Taming - Lets you tame foxes https://mods.vintagestory.at/fox
+Cat Taming - Lets you tame cats https://mods.vintagestory.at/cats
+Animal Cages - Lets you capture animals in cages which is useful for taming but needs config modified https://mods.vintagestory.at/animalcages
+Lichen - Adds deer and some cozy decoration items https://mods.vintagestory.at/lichen
+Meteoric Expansion - Adds cool random events where a meteor will fall to earth and create a hole where it strikes https://mods.vintagestory.at/show/mod/78
+More Piles - Lets you stack more items into piles for easy storage https://mods.vintagestory.at/morepiles
+Primitive Survival - May add some weird scary content but the early game content it adds (trapping and fishing) is awesome as well as monkey bridge to cross big gaps https://mods.vintagestory.at/primitivesurvival
+ProspectorInfo - This mod reduces some difficulty but many say this should be built into vanilla because you just need to record this info another way with how hard mining can be https://mods.vintagestory.at/show/mod/1235
+Tabletop Games - Adds several tabletop games that can be played. Only adds the pieces and does not add any complicated rules https://mods.vintagestory.at/tabletopgames
+Wildcraft - More plants and mechanics for them. Changes poultice to timed buff instead of instant and adds stuff like poison oak that does damage https://mods.vintagestory.at/wildcraft
+hidePlayerName - Only shows player name when looking at them https://mods.vintagestory.at/show/mod/3075
+Feverstone Horses - Adds horses https://mods.vintagestory.at/feverstonehorses
+Alloy Calculator - Press U to bring up an in game alloy calculator https://mods.vintagestory.at/alloycalculator
+Cralu Tweaks - Adds a bunch of minor tweaks to the game like putting fire starters in tool holders https://mods.vintagestory.at/cralutweaks
+Fix Bad Recipes - Fixes mods that dont know how to use wood variant planks instead of vanilla only https://mods.vintagestory.at/fixbadrecipes
+Fix Handbook Clutter - Lowers the amount of items in the guide which is nice when mods add tons of items https://mods.vintagestory.at/fixhandbookclutter
+Hide and Fabric - Not super well tested but adds more ways to get cloth in game and more clothing variety https://mods.vintagestory.at/hideandfabric
+Immersive Crafting - Makes more crafting recipes occur on the ground rather than menu https://mods.vintagestory.at/immersivecrafting
+Multiblock crates - Allows for larger vanilla friendly crates https://mods.vintagestory.at/mcrate
+necessaries - Adds some semi useful items as well as climbing vines and trap doors https://mods.vintagestory.at/show/mod/19
+Rain Collector - Causes water to collect in containers exposed to it https://mods.vintagestory.at/raincollector
+Ruin Variants - This causes ruins to be created of the stone type they are found in https://mods.vintagestory.at/ruinvariants
+Vanilla Variants - Causes wood color to infuence wood items created with different types of wood https://mods.vintagestory.at/vanvar
+Wood Barrels - Wood types affect wood barrels and better models https://mods.vintagestory.at/woodbarrels
+Wood Chests - Chests from every wood and ability to recycle them https://mods.vintagestory.at/woodchests
+Blood - Red particles fall from wounded enemies https://mods.vintagestory.at/blood
+Xrowboat - Adds rowboats to the game https://mods.vintagestory.at/xrowboat
+Stone Quarry - Allows you to mine out chunks of rock and turn rocks into gravel https://mods.vintagestory.at/stonequarry
