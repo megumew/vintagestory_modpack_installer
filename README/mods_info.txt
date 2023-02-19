@@ -20,7 +20,6 @@ Meteoric Expansion - Adds cool random events where a meteor will fall to earth a
 More Piles - Lets you stack more items into piles for easy storage https://mods.vintagestory.at/morepiles
 Primitive Survival - May add some weird scary content but the early game content it adds (trapping and fishing) is awesome as well as monkey bridge to cross big gaps https://mods.vintagestory.at/primitivesurvival
 ProspectorInfo - This mod reduces some difficulty but many say this should be built into vanilla because you just need to record this info another way with how hard mining can be https://mods.vintagestory.at/show/mod/1235
-Tabletop Games - Adds several tabletop games that can be played. Only adds the pieces and does not add any complicated rules https://mods.vintagestory.at/tabletopgames
 Wildcraft - More plants and mechanics for them. Changes poultice to timed buff instead of instant and adds stuff like poison oak that does damage https://mods.vintagestory.at/wildcraft
 hidePlayerName - Only shows player name when looking at them https://mods.vintagestory.at/show/mod/3075
 Feverstone Horses - Adds horses https://mods.vintagestory.at/feverstonehorses
