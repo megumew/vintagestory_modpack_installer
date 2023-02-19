@@ -2,7 +2,7 @@ use std::io::{self, stdin};
 use std::path::Path;
 
 fn main() {
-    println!("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\t|installing mods the easy way uwu|\n\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    println!("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\t| installing mods the easy way uwu |\n\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
     #[cfg(windows)]
     let paths = find_appata();
