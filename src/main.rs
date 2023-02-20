@@ -89,7 +89,7 @@ fn check_mods_available() -> io::Result<()> {
     );
 
     for file in mods {
-        println!("{:?}", file)
+        println!("{:?}", file.file_name().unwrap())
     }
     Ok(())
 }
