@@ -1,9 +1,14 @@
 use std::io::{self, stdin};
 use std::path::Path;
 
+struct Data{
+
+}
+
 fn main() {
     println!("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\t| installing mods the easy way uwu |\n\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
+    // Check %appdata% for VintagestoryData and make ModConfig folder if it doesn't already exist
     #[cfg(windows)]
     let paths = find_appata();
     let app_data = paths.0;
@@ -18,7 +23,14 @@ fn main() {
 
     println!("> Your Vintage Story data is in {vintage_story_path}\n");
 
-    install_required_mods().expect("Something went wrong when installing required mods!");
+
+    // !TODO Query for local mode or server mode 
+
+    // Check that the modpack is read in data folder
+
+    
+
+    install_required_mods().expect("Error occured while instlaling the required mods!");
 }
 
 fn find_appata() -> (String, String) {
@@ -33,7 +45,7 @@ fn find_appata() -> (String, String) {
 }
 
 fn install_required_mods() -> io::Result<()> {
-    let mods = std::fs::read_dir("mods")?
+    let mods = std::fs::read_dir("data/mods")?
         .map(|res| res.map(|e| e.path()))
         .collect::<Result<Vec<_>, io::Error>>()?;
 
