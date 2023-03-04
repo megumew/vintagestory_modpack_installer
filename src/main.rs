@@ -86,6 +86,29 @@ fn get_y_n(default: bool) -> bool {
     }
 }
 
+fn get_num(length: usize) -> usize {
+    loop {
+        let mut response = String::new();
+
+        let stdin = io::stdin();
+
+        stdin
+            .read_line(&mut response)
+            .expect("Something went horribly wrong while getting user input!");
+
+        match response.trim().parse::<usize>() {
+            Ok(v) => {
+                if v <= length && v > 0 {
+                    return v;
+                } else {
+                    println!("Input value is outside the correct bounds!")
+                }
+            }
+            Err(e) => println!("Your input was not correct: {e}"),
+        };
+    }
+}
+
 fn wait_enter() {
     //Dirty way to wait for enter to be pressed...
 
@@ -149,7 +172,16 @@ fn detect_modpack() -> io::Result<()> {
     // !TODO NEED TO SET WAY TO SELECT BETWEEN MULTIPLE MODPACKS
     if modpacks.len() > 1 {
         println!("Multiple modpacks found please select one.");
-        modpack = modpacks.pop().unwrap();
+        let mut count = 1;
+        for pack in &modpacks {
+            println!("{count}. {:?}", pack.file_name());
+            count += 1;
+        }
+        modpack = modpacks
+            .get(get_num(modpacks.len()) - 1)
+            .unwrap()
+            .to_path_buf();
+        println!("> Selected modpack \"{}\" !", modpack.display());
     } else {
         modpack = modpacks.pop().unwrap();
         println!("> Modpack \"{}\" found!", modpack.display());
