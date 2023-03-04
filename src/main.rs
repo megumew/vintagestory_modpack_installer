@@ -48,9 +48,7 @@ fn first_time_setup(path: &Path) {
 
     println!("> Are you okay to install data to {:?} ? (y/N)", path);
 
-    let allow = get_y_n();
-
-    if !allow {
+    if !get_y_n(false) {
         println!("> User did not consent to the program being installed! Terminating program!");
         wait_enter();
         exit(0);
@@ -62,7 +60,7 @@ fn first_time_setup(path: &Path) {
     println!("> gwep_installer is now installed to {:?} ...", path);
 }
 
-fn get_y_n() -> bool {
+fn get_y_n(default: bool) -> bool {
     loop {
         let mut response = String::new();
 
@@ -74,10 +72,13 @@ fn get_y_n() -> bool {
 
         response = response.trim().to_ascii_lowercase();
 
+        if response == "" {
+            return default;
+        }
         if response == "y" {
             return true;
         }
-        if response == "n" || response == "" {
+        if response == "n" {
             return false;
         }
 
@@ -167,8 +168,7 @@ fn detect_modpack() -> io::Result<()> {
 
     println!("> Do you want to display the contained mods? (y/N)");
 
-    let list = get_y_n();
-    if list {
+    if get_y_n(false) {
         println!("\nRequired Mods \n-------------");
         for file in mods {
             println!("{:?}", file.file_name().unwrap())
