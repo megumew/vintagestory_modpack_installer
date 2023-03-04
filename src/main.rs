@@ -8,10 +8,16 @@ use std::process::exit;
 fn main() {
     println!("\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\t| installing mods the easy way uwu |\n\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 
+    println!("> Please press enter to continue when presented with");
+
+    wait_enter();
+
     #[cfg(windows)]
     let app_data = find_appata();
 
-    println!("> Determined your %appdata% folder to be {}\n  If this is correct press enter... else close the program now!\n", app_data);
+    println!("> Determined your %appdata% folder to be {}\n  If this is incorrect please close the program now!\n", app_data);
+
+    wait_enter();
 
     // Check if gwep_installer folder exists, if not run first time setup
     let gwep_installer = format!("{}\\gwep_installer", app_data);
@@ -21,8 +27,6 @@ fn main() {
     }
 
     let vintage_story_path = format!("{}\\VintagestoryData", app_data);
-
-    wait_enter();
 
     // Check %appdata% for VintagestoryData and make ModConfig folder if it doesn't already exist
     vintage_story_check(vintage_story_path);
@@ -40,19 +44,22 @@ fn main() {
 }
 
 fn first_time_setup(path: &Path) {
-    println!("Running first time setup for gwep_installer!");
+    println!("> Running first time setup for gwep_installer!");
 
-    println!("Are you okay to install data to {:?} ? (y/N)", path);
+    println!("> Are you okay to install data to {:?} ? (y/N)", path);
 
     let allow = get_y_n();
 
     if !allow {
-        println!("User did not consent to the program being installed!");
+        println!("> User did not consent to the program being installed! Terminating program!");
+        wait_enter();
         exit(0);
     }
 
     create_dir_all(path.join("mod_packs"))
         .expect("Critical Error occured while attempting to install in appdata folder!");
+
+    println!("> gwep_installer is now installed to {:?} ...", path);
 }
 
 fn get_y_n() -> bool {
@@ -80,6 +87,9 @@ fn get_y_n() -> bool {
 
 fn wait_enter() {
     //Dirty way to wait for enter to be pressed...
+
+    println!("> ...");
+
     stdin()
         .read_line(&mut String::new())
         .expect("Something went horribly wrong!");
@@ -99,10 +109,7 @@ fn vintage_story_check(input_path: String) {
     if !path.exists() {
         panic!("Please run Vintage Story at least once before using this installer!")
     }
-    println!(
-        "> Your Vintage Story data is in {}\n",
-        path.to_str().unwrap()
-    );
+    println!("> Your Vintage Story data is in {}", path.to_str().unwrap());
 
     let config_path = path.join("ModConfig");
 
@@ -112,7 +119,7 @@ fn vintage_story_check(input_path: String) {
             .expect("Critical Error occured while attempting to create ModConfig directory!");
     }
 
-    println!("> Check succeeded! Press Enter to continue...");
+    println!("> Check succeeded!");
 }
 
 fn detect_modpack() -> io::Result<()> {
