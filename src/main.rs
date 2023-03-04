@@ -151,7 +151,7 @@ fn detect_modpack() -> io::Result<()> {
         modpack = modpacks.pop().unwrap();
     } else {
         modpack = modpacks.pop().unwrap();
-        println!("Modpack {} found!", modpack.display());
+        println!("> Modpack \"{}\" found!", modpack.display());
     }
 
     let mods = std::fs::read_dir(modpack.join("mods"))?
@@ -161,12 +161,19 @@ fn detect_modpack() -> io::Result<()> {
     //mods.sort();
 
     println!(
-        "{} required mods to install\n~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+        "\t~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t{} required mods to install\n\t~~~~~~~~~~~~~~~~~~~~~~~~~~~",
         mods.len()
     );
 
-    for file in mods {
-        println!("{:?}", file.file_name().unwrap())
+    println!("> Do you want to display the contained mods? (y/N)");
+
+    let list = get_y_n();
+    if list {
+        println!("\nRequired Mods \n-------------");
+        for file in mods {
+            println!("{:?}", file.file_name().unwrap())
+        }
+        println!("-------------");
     }
     Ok(())
 }
